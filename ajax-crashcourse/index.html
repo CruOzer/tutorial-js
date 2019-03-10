@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AJAX Crashcourse</title>
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Ajax-Crashcourse</h1>
+  <p>Fetch text file async</p>
+  <button id="btnGetTextFile">Get Textfile</button>
+  <div id="textfile"></div>
+
+
+  <button id="btnGetUser">Get User</button>
+  <button id="btnGetUsers">Get Users</button>
+  <h1>User</h1>
+  <div id="user"></div>
+  <h1>Users</h1>
+  <div id="users"></div>
+
+  <button id="btnGetUsersGithub">Get Users from Github </button>
+  <h1>Github Users</h1>
+  <div id="githubusers"></div>
+
+  <h1>Ajax PHP</h1>
+  <button id="btnPhpForm">Get Name</button>
+  <hr>
+  <p>Normal Get-PHP-Form</p>
+  <form method="GET" action="process.php">
+    <input type="text" name="name">
+    <input type="submit" value="submit">
+  </form>
+  <p>AJAX Get-PHP-Form</p>
+  <form id="getForm" method="GET" action="process.php">
+    <input type="text" name="name" id="nameGet">
+    <input type="submit" value="submit">
+  </form>
+
+  <hr>
+  <p>Normal Post-PHP-Form</p>
+  <form method="POST" action="process.php">
+    <input type="text" name="name">
+    <input type="submit" value="submit">
+  </form>
+  <p>AJAX Post-PHP-Form</p>
+  <form id="postForm" method="POST" action="process.php">
+    <input type="text" name="name" id="namePost">
+    <input type="submit" value="submit">
+  </form>
+  <hr>
+  <h1>Fetch User from Database</h1>
+
+  <button id="btnGetUsersFromDB">Get Users From Database</button>
+  <div id="usersFromDB"></div>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

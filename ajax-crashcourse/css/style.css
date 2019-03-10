@@ -1,0 +1,10 @@
+#githubusers .user {
+  display: flex;
+  background: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#githubusers .user ul{
+  list-style: none;
+}
